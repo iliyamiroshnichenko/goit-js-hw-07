@@ -9,3 +9,21 @@ body {
 .nav__link--primary {
   font-size: 24px;
 }
+
+  .product-card__name::before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .product-card__name--available::before {
+    background-color: green;
+  }
+
+    .product-card__name--not-available::before {
+    background-color: red;
+  }

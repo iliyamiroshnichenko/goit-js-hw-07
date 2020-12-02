@@ -29,3 +29,22 @@ console.log(descrRef);
 const priceRef = document.createElement('p');
 priceRef.textContent = `Цена: ${product.price} гривен`;
 console.log(priceRef);
+
+// containerRef.appendChild(titleRef);
+// containerRef.appendChild(descrRef);
+// containerRef.appendChild(priceRef);
+containerRef.append(titleRef, descrRef, priceRef);
+console.log(containerRef);
+
+
+// const navRef = document.querySelector('.nav');
+// console.log(navRef);
+
+// const listItemRef = document.createElement('li');
+// listItemRef.textContent = 'New Item';
+// listItemRef.classList.add('nav__item');
+// // navRef.prepend(listItemRef);
+// navRef.insertBefore(listItemRef, navRef.firstElementChild);
+
+const cardRootRef = document.querySelector('#root');
+cardRootRef.appendChild(containerRef);
