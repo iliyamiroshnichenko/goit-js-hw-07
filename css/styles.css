@@ -1,9 +1,23 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
+ul {
+  list-style: none;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item:not(:last-child) {
+  margin-right: 20px;
+}

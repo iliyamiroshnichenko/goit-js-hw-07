@@ -23,3 +23,19 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
+
+const createImage = image => {
+  const itemRef = document.createElement('li');
+  itemRef.classList.add("gallery-item");
+  const imageRef = document.createElement('img');
+  imageRef.src = image.url;
+  imageRef.alt = image.alt;
+  imageRef.width = 320;
+  itemRef.appendChild(imageRef);
+  return itemRef;
+};
+
+const items = images.map(item => createImage(item));
+
+const listRef = document.querySelector("#gallery");
+listRef.append(...items);
