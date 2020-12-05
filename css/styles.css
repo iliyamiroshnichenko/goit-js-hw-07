@@ -21,3 +21,19 @@ ul {
 .gallery-item:not(:last-child) {
   margin-right: 20px;
 }
+
+#counter {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#counter button {
+  width: 70px;
+}
+
+#value {
+  margin-left: 5px;
+  margin-right: 5px;
+}
