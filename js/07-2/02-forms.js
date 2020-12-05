@@ -1,3 +1,9 @@
+/* Событие submit 
+* Действие браузера по умолчанию 
+* Свойство elements
+* Класс FormData
+*/
+
 const formRef = document.querySelector('.js-register-form');
 formRef.addEventListener('submit', (event) => {
     event.preventDefault();

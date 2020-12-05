@@ -41,7 +41,9 @@
     <p><a href="/">На главную</a></p>
     <button type="button" class="js-target-button">Целевая кнопка</button>
     <button type="button" class="js-add-listener">Добавить слушателя</button>
-    <button type="button" class="js-remove-listener">Снять слушателя</button> <br> <br>
+    <button type="button" class="js-remove-listener">Снять слушателя</button>
+    <br />
+    <br />
 
     <form class="js-register-form">
       <div role="group">
@@ -60,13 +62,29 @@
       <br />
       <div role="group">
         <b>Выберите тип подписки</b>
-        <label><input type="radio" name="subscription" value="free">Free</label>
-        <label><input type="radio" name="subscription" value="basic">Basic</label>
-        <label><input type="radio" name="subscription" value="pro">Pro</label>
+        <label
+          ><input type="radio" name="subscription" value="free" />Free</label
+        >
+        <label
+          ><input type="radio" name="subscription" value="basic" />Basic</label
+        >
+        <label><input type="radio" name="subscription" value="pro" />Pro</label>
       </div>
       <br />
       <button type="submit">Зарегестрироваться</button>
     </form>
+    <!-- 03-input.js -->
+    <h2>События инпутов</h2>
+    <label>Имя <input type="text" class="js-input" /></label>
+    <p>
+      <label
+        ><input type="checkbox" class="js-license" />Принимаю лицензионное
+        соглашение</label
+      >
+    </p>
+    <button type="button" disabled class="js-button">
+      Зарегестрироваться как <span>Аноним</span>
+    </button>
 
     <script src="./js/07-1/products.js" type="module"></script>
     <!-- <script src="./js/07-1/01-basics.js" type="module"></script> -->
@@ -74,6 +92,7 @@
     <!-- <script src="./js/07-1/03-create-part2.js" type="module"></script> -->
     <script src="./js/07-2/01-listeners.js" type="module"></script>
     <script src="./js/07-2/02-forms.js" type="module"></script>
+    <script src="./js/07-2/03-input.js" type="module"></script>
     <!-- <script src="./js/task/task-6-1.js" type="module"></script> -->
     <!-- <script src="./js/task/task-6-2.js" type="module"></script> -->
     <!-- <script src="./js/task/task-6-3.js" type="module"></script> -->
