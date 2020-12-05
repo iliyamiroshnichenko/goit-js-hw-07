@@ -3,5 +3,5 @@ const textRef = document.querySelector('#name-output');
 
 inputRef.addEventListener(
   "input",
-  () => (textRef.textContent = inputRef.value ? inputRef.value : "незнакомец")
+  (e) => (textRef.textContent = e.target.value ? e.target.value : "незнакомец")
 );
