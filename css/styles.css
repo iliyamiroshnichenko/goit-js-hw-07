@@ -38,6 +38,7 @@ ul {
 
 #validation-input {
   border: 3px solid #bdbdbd;
+  margin-bottom: 20px;
 }
 
 #validation-input.valid {
@@ -46,4 +47,8 @@ ul {
 
 #validation-input.invalid {
   border-color: #f44336;
+}
+
+#text {
+ padding-bottom: 20px;
 }

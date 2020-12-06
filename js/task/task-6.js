@@ -1,7 +1,7 @@
 const inputRef = document.querySelector("#validation-input");
 const countOfSymbols = +inputRef.dataset.length;
 
-const setClass = (e) => {
+const handleClass = (e) => {
   if (e.target.value.length === countOfSymbols) {
     e.target.classList.remove("invalid");
     e.target.classList.add("valid");
@@ -11,4 +11,4 @@ const setClass = (e) => {
   }
 };
 
-inputRef.addEventListener("blur", setClass);
+inputRef.addEventListener("blur", handleClass);
