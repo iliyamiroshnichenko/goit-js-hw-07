@@ -7,10 +7,12 @@ const nameLabelRef = document.querySelector(".js-button span");
 const licenseRef = document.querySelector(".js-license");
 const btnRef = document.querySelector(".js-button");
 
-inputRef.addEventListener("input", (e) => {
-  nameLabelRef.textContent = e.target.value;
-});
+const handleInputFocus = (e) => console.log("Получил фокус");
+const handleInputBlur = (e) => console.log("Потерял фокус");
+const handleInputChange = (e) => (nameLabelRef.textContent = e.target.value);
+const handleLicenseChecked = (e) => (btnRef.disabled = !e.target.checked);
 
-licenseRef.addEventListener('change', e => {
-    btnRef.disabled = !e.target.checked;
-})
+inputRef.addEventListener("input", handleInputChange);
+licenseRef.addEventListener("change", handleLicenseChecked);
+inputRef.addEventListener("focus", handleInputFocus);
+inputRef.addEventListener("blur", handleInputBlur);
