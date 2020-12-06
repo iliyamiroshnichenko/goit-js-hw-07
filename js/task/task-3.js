@@ -18,7 +18,6 @@ const images = [
 
 const createImage = ({url, alt}) => {
   const itemRef = document.createElement('li');
-  itemRef.classList.add("gallery-item");
   const imageRef = document.createElement('img');
   imageRef.src = url;
   imageRef.alt = alt;
