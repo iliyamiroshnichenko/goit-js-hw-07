@@ -29,6 +29,7 @@ const createBoxes = (amount) => {
 
 const destroyBoxes = () => {
   boxes = [];
+  inputRef.value = '';
   boxesRef.querySelectorAll("div").forEach((div) => div.remove());
 };
 

@@ -16,17 +16,16 @@ const images = [
   },
 ];
 
-const createImage = ({url, alt}) => {
-  const itemRef = document.createElement('li');
-  const imageRef = document.createElement('img');
-  imageRef.src = url;
-  imageRef.alt = alt;
-  imageRef.width = 320;
-  itemRef.appendChild(imageRef);
+const createImage = ({ url, alt }) => {
+  const itemRef = document.createElement("li");
+  itemRef.insertAdjacentHTML(
+    'afterbegin',
+    `<img src=${url} alt=${alt} width="320"></img>`
+  );
   return itemRef;
 };
 
-const items = images.map(item => createImage(item));
+const items = images.map((item) => createImage(item));
 
 const listRef = document.querySelector("#gallery");
 listRef.append(...items);
